@@ -1,0 +1,211 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #4a0072; /* Darker Purple */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+}
+
+/* Center Headers */
+.container h1, .container h2, .container h3 {
+    text-align: center; /* Keep headers centered */
+    margin-bottom: 20px;
+}
+
+/* Align Main Text to the Left */
+.container p, .container ul, .container ol, .container blockquote {
+    text-align: left; /* Align main text to the left */
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Navigation Styling */
+nav {
+    /* background-color: #f1f1f1; */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Added space between header and links */
+    margin-bottom: 20px; /* Space between nav and main content */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px; /* Added padding for button effect */
+    background-color: #808080; /* Gray Background */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #666666; /* Darker Gray on Hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: #f1f1f1; /* Ensure text remains readable */
+}
+
+/* Main Content Container */
+.container {
+    background-color: #bfc8a3; /* Light Blue Background */
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+
+/* Buttons */
+button {
+    background-color: #808080; /* Grey background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px; /* Space between buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #666666; /* Darker grey on hover */
+    transform: scale(1.05); /* Slight enlarge effect on hover */
+}
+
+/* Container for bottom-center alignment */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Add spacing between content and buttons */
+}
+
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    gap: 15px; /* Add spacing between elements */
+    align-items: flex-start; /* Align all items to the left */
+    width: 100%; /* Ensure form takes up full container width */
+    max-width: 500px; /* Optional: Limit form width */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+form label {
+    display: flex;
+    justify-content: space-between; /* Keep label and input aligned */
+    width: 100%; /* Ensure label spans the full width */
+}
+
+form input, form textarea {
+    width: 100%; /* Make inputs and textarea span the full width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+form textarea {
+    resize: vertical; /* Allow resizing only vertically */
+    height: 100px; /* Set a default height */
+}
+
+form button {
+    align-self: flex-start; /* Align the button to the left */
+    background-color: #808080; /* Gray button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #666666; /* Darker gray on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Social Icons Styling */
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 2em; /* Icon size */
+    color: #0077b5; /* LinkedIn Blue */
+    margin: 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #005582; /* Darker LinkedIn Blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+    color: #4a0072;
+}
+.card a {
+    color: #0077b5;
+    text-decoration: none;
+}
+.card a:hover {
+    text-decoration: underline;
+}
